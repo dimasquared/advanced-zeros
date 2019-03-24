@@ -20,9 +20,9 @@ module.exports = function getZerosCount(number, base) {
   });
 
   let zerosCount = [];
-  let zeros = 0;
-
+  
   for (let key in countPrime) {
+    let zeros = 0;
     for (let i = 1; Math.pow (key, i) <= number; i++) {
       zeros = zeros + Math.floor (number / Math.pow (key, i));
     }
